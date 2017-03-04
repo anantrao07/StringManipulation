@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//class to seperate the given String using  String Class ' Split() function 
+//and printing the number of times the word has been repeated in the given string.
 
 public class Processing {
 
@@ -22,12 +24,10 @@ public class Processing {
 			
 			 else if(countHash.containsKey(s) == false){
 				 countHash.put(s, 1);
-			
 		}
 	
 		}
 		
-	
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -35,8 +35,8 @@ public class Processing {
 		Input inp = new Input();
 		Partition part = new Partition();
 		part.partition(inp.getSentence());
-		//Processing ps = new Processing();
-		//ps.processor(inp.getSentence());
+		Processing ps = new Processing();
+		ps.processor(inp.getSentence());
 		
 		
 	}
